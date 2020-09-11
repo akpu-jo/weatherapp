@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Weather App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1 user-scalable=no shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js"></script>
+</head>
+
+<body>
+  <div class="appWrap"> <!--body wide div-->
+    <header class="container" id="appHeader">
+      <div class="searchContainer">
+        <form  id="my-form" action="">
+          <input type="search" autocomplete="off" class="search-box" autofocus placeholder="Search for a city..." name="search" >
+          <button><img src="search.png"></button>
+        </form>
+      </div>
+      <div class="tempUnitButton">
+        <button class="button">°C</button>
+        <button class="button">°F</button>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="row">
+        <section class="col-sm-8" id="location">
+          <article>
+            <div class="city">NEW YORK, UNITED STATES</div>
+            <div class="time">~~:~~</div>
+            <div class="current">
+              <div class="temp"> <span id="tempValue">26</span><span id="unit">°C</span></div>
+              <div class="weather">~~~</div>
+            </div>
+          </article>
+        </section>
+
+        <aside class="col-sm-4">
+          <div>
+            <ul data-testid="WeatherTable">
+              <li class="morning"><h3><span >Morning</span></h3><div data-testid="SegmentHighTemp"><span data-testid="TemperatureValue">--</span></div><div data-testid="SegmentLowTemp" class=""><span data-testid="TemperatureValue">Sunny</span></div></li>
+              <li class="afternoon"><h3><span >Afternoon</span></h3><div data-testid="SegmentHighTemp"><span data-testid="TemperatureValue">23</span></div><div data-testid="SegmentLowTemp" class=""><span data-testid="TemperatureValue">Sunny</span></div></li>
+              <li class="evening"><h3><span >Evening</span></h3><div data-testid="SegmentHighTemp"><span data-testid="TemperatureValue">27</span></div><div data-testid="SegmentLowTemp" class=""><span data-testid="TemperatureValue">Cloudy</span></div></li>
+              <li class="night"><h3><span >Night</span></h3><div data-testid="SegmentHighTemp"><span data-testid="TemperatureValue">27</span></div><div data-testid="SegmentLowTemp" class=""><span data-testid="TemperatureValue">Rainy</span></div></li>
+            </ul>
+          </div>
+        </aside>
+        <article class="col-sm-12">
+          <h2>Daily Forecast</h2>
+        <div>
+          <ul class="" data-testid="WeatherTable">
+            <li><a href="#"><h3><span >Today</span></h3><div data-testid="SegmentHighTemp"><span data-testid="TemperatureValue">--</span></div><div data-testid="SegmentLowTemp" class=""><span data-testid="TemperatureValue">21°</span></div></a></li>
+            <li><a href="#"><h3><span >Thu 10</span></h3><div data-testid="SegmentHighTemp"><span data-testid="TemperatureValue">23</span></div><div data-testid="SegmentLowTemp" class=""><span data-testid="TemperatureValue">21°</span></div></a></li>
+            <li><a href="#"><h3><span >Fri 11</span></h3><div data-testid="SegmentHighTemp"><span data-testid="TemperatureValue">27</span></div><div data-testid="SegmentLowTemp" class=""><span data-testid="TemperatureValue">26°</span></div></a></li>
+            <li><a href="#"><h3><span >Sat 12</span></h3><div data-testid="SegmentHighTemp"><span data-testid="TemperatureValue">27</span></div><div data-testid="SegmentLowTemp" class=""><span data-testid="TemperatureValue">24°</span></div></a></li>
+            <li><a href="#"><h3><span >Sun 13</span></h3><div data-testid="SegmentHighTemp"><span data-testid="TemperatureValue">30</span></div><div data-testid="SegmentLowTemp" class=""><span data-testid="TemperatureValue">22°</span></div></a></li>
+          </ul>
+        </div>
+      </article>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

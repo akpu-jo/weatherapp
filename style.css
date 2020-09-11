@@ -1,0 +1,119 @@
+body
+{
+  background-image: linear-gradient(rgb(219, 217, 252),rgb(245, 249, 253));
+  font-family: 'Ubuntu', sans-serif;
+}
+.appWrap
+{
+  background-image:linear-gradient(rgb(202, 219, 241)),rgb(232, 236, 240))
+}
+header
+{
+  background-color: transparent;
+  padding: 40px;
+  margin-bottom: 20px;
+}
+.searchContainer
+{
+  float: left;
+}
+form input
+{
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+  padding: 2px;
+}
+form button {
+  float: left;
+  width: 20%;
+  padding: 2px;
+  background: rgb(190, 189, 189);
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+.tempUnitButton
+{
+  float: right;
+}
+
+.tempUnitButton button {
+  background-color: rgb(190, 189, 189); /* gray background */
+  border: 1px solid gray; /* gray border */
+  color: rgb(31, 30, 30); /* black text */
+  padding: 4px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+}
+
+.tempUnitButton:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.tempUnitButton button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.tempUnitButton button:hover {
+  background-color: gray;
+}
+
+ul
+{
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+ul li
+{
+  background-color: whitesmoke;
+  border: 1px solid #ddd;
+  border-radius: 13px;
+  padding: 12px;
+  margin: 5px;
+}
+
+#location
+{
+  background-color: rgb(254, 244, 230);
+  background-image: url(Weather.jpg);
+  border: 1px solid #ddd;
+  border-radius: 13px;
+}
+
+#location .city
+{
+  font-weight: 400;
+  font-size: 20px;
+  margin-bottom: 5px;
+  margin-top: 110px;
+  text-align: center;
+}
+#location .time
+{
+  font-weight: 300;
+  font-size: 16px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+#location .temp
+{
+  font-weight: 500;
+  text-align: center;
+  font-size: 32px;
+  margin: 40px 0px;
+}
+#location .weather
+{
+  text-align: center;
+  font-weight: 400;
+  font-size: 22px;
+}
